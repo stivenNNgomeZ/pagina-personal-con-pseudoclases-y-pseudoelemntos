@@ -1,0 +1,91 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+/*titulos*/
+h1 {
+    color: #e74c3c; 
+    border-bottom: 3px solid #4CAF50; 
+    padding-bottom: 10px;
+}
+
+.contenedor-infectados {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: #333;
+    border: 1px solid #777;
+    padding: 10px;
+    width: 200px;
+    margin-top: 20px;
+    transition: background-color 0.2s; /*estoes para el hover de la pagina*/
+}
+
+.btn-detalles {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.2s; /* esto es para el active delboton*/
+}
+
+/*pseudo clases */
+
+/*interaccion al mouse pasar por encima de la tarjeta */
+.tarjeta:hover {
+    background-color: #555;
+}
+
+/*sirve para el borde el boton cuando se selecciona*/
+.btn-detalles:focus {
+    outline: 3px solid yellow;
+}
+
+/*cambiael color cuando se presiona*/
+.btn-detalles:active {
+    background-color: #c0392b; 
+}
+
+/*este selecciona al primero para que tenga un borde rojo*/
+.tarjeta:first-child {
+    border-left: 5px solid red;
+}
+
+/*selecciona al smoker para que tenga un fondo mas oscuro*/
+.tarjeta:nth-child(2) {
+    background-color: #444; 
+}
+
+/*pseuudo elementos*/
+
+/*uso simbolos*/
+.tarjeta h2::before {
+    content: "💀 ";
+    color: red;
+}
+
+/* uso simbolos*/
+.tarjeta h2::after {
+    content: " 💀";
+    color: red;
+}
+
+/* ::first-letter para agrandar lapriemra letra*/
+.info::first-letter {
+    font-size: 1.5em;
+    color: yellow;
+}
+
+/* ::first-line (Cambiar el color de la primera línea) */
+.info::first-line {
+    color: #4CAF50;
+}
