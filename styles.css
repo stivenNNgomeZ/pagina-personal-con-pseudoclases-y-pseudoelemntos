@@ -1,4 +1,4 @@
-body {
+body { 
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
@@ -88,4 +88,49 @@ h1 {
 /* ::first-line (Cambiar el color de la primera línea) */
 .info::first-line {
     color: #4CAF50;
+} 
+
+/*origen de los infectados*/
+.origen::after{
+  content: "☠️​";
 }
+.origen::before{ content: "☠️​";
+
+}
+
+.origen{ 
+  display: block;
+}
+.hunter::after{ content: "☠️​";
+}
+.hunter::before{content: "☠️​";
+}
+.han{
+  text-align: center;
+}
+.smoker::after{
+  content: "☠️​";
+}
+.smoker::before{
+  content: "☠️​";
+}
+.boomer::after{
+  content: "☠️​";
+}
+.boomer::before{
+  content: "☠️​";
+}
+/*pie de la pagina*/
+.footer{ 
+  margin-bottom: -100px ;
+  text-align: start;
+  padding: 100;
+
+}
+.footer::after{
+  content: "🔰​​";
+}
+.footer::before{
+  content: "🔰​​";
+}
+
